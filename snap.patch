@@ -1,0 +1,33 @@
+diff --git a/node_modules/monaco-editor/esm/vs/editor/editor.main.js b/node_modules/monaco-editor/esm/vs/editor/editor.main.js
+index b7dd68a..0f9b463 100644
+--- a/node_modules/monaco-editor/esm/vs/editor/editor.main.js
++++ b/node_modules/monaco-editor/esm/vs/editor/editor.main.js
+@@ -1,7 +1,7 @@
+-import '../language/typescript/monaco.contribution';
+-import '../language/css/monaco.contribution';
+-import '../language/json/monaco.contribution';
+-import '../language/html/monaco.contribution';
+-import '../basic-languages/monaco.contribution';
++import '../language/typescript/monaco.contribution.js';
++import '../language/css/monaco.contribution.js';
++import '../language/json/monaco.contribution.js';
++import '../language/html/monaco.contribution.js';
++import '../basic-languages/monaco.contribution.js';
+ 
+-export * from './edcore.main';
+\ No newline at end of file
++export * from './edcore.main.js';
+\ No newline at end of file
+diff --git a/node_modules/monaco-editor/esm/vs/base/browser/ui/codiconLabel/codicon/codicon.css b/node_modules/monaco-editor/esm/vs/base/browser/ui/codiconLabel/codicon/codicon.css
+index 5209824..267b0fa 100644
+--- a/node_modules/monaco-editor/esm/vs/base/browser/ui/codiconLabel/codicon/codicon.css
++++ b/node_modules/monaco-editor/esm/vs/base/browser/ui/codiconLabel/codicon/codicon.css
+@@ -5,7 +5,7 @@
+ 
+ @font-face {
+ 	font-family: "codicon";
+-	src: url(./codicon.ttf) format("truetype");
++	src: url(/node_modules/monaco-editor/esm/vs/base/browser/ui/codiconLabel/codicon/codicon.ttf) format("truetype");
+ }
+ 
+ .codicon[class*='codicon-'] {

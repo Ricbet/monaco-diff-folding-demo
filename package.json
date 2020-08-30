@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "postinstall": "git apply monaco.patch",
+        "postinstall": "git apply --ignore-space-change --ignore-whitespace monaco.patch && git apply --ignore-space-change --ignore-whitespace snap.patch",
         "dev": "node node.js"
     },
     "author": "",
