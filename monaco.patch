@@ -1,0 +1,13 @@
+diff --git a/node_modules/monaco-editor/esm/vs/editor/browser/widget/diffEditorWidget.js b/node_modules/monaco-editor/esm/vs/editor/browser/widget/diffEditorWidget.js
+index c96a14e..7678949 100644
+--- a/node_modules/monaco-editor/esm/vs/editor/browser/widget/diffEditorWidget.js
++++ b/node_modules/monaco-editor/esm/vs/editor/browser/widget/diffEditorWidget.js
+@@ -754,7 +754,7 @@ var DiffEditorWidget = /** @class */ (function (_super) {
+         clonedOptions.automaticLayout = false;
+         clonedOptions.scrollbar = clonedOptions.scrollbar || {};
+         clonedOptions.scrollbar.vertical = 'visible';
+-        clonedOptions.folding = false;
++        clonedOptions.folding = options.folding;
+         clonedOptions.codeLens = false;
+         clonedOptions.fixedOverflowWidgets = true;
+         // clonedOptions.lineDecorationsWidth = '2ch';
