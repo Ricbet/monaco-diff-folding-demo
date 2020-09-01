@@ -18,16 +18,3 @@ index b7dd68a..0f9b463 100644
 \ No newline at end of file
 +export * from './edcore.main.js';
 \ No newline at end of file
-diff --git a/node_modules/monaco-editor/esm/vs/base/browser/ui/codiconLabel/codicon/codicon.css b/node_modules/monaco-editor/esm/vs/base/browser/ui/codiconLabel/codicon/codicon.css
-index 5209824..267b0fa 100644
---- a/node_modules/monaco-editor/esm/vs/base/browser/ui/codiconLabel/codicon/codicon.css
-+++ b/node_modules/monaco-editor/esm/vs/base/browser/ui/codiconLabel/codicon/codicon.css
-@@ -5,7 +5,7 @@
- 
- @font-face {
- 	font-family: "codicon";
--	src: url(./codicon.ttf) format("truetype");
-+	src: url(/node_modules/monaco-editor/esm/vs/base/browser/ui/codiconLabel/codicon/codicon.ttf) format("truetype");
- }
- 
- .codicon[class*='codicon-'] {
